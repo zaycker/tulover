@@ -1,3 +1,10 @@
+## Preheader
+Added redux, redux-saga, classnames, jest, enzyme. Used css-modules.
+
+Task described two-ways exchange, but video shows only one-way exchange. Made as in video.
+
+## Header
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

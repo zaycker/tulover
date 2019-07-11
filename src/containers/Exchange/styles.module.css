@@ -1,0 +1,58 @@
+.exchange {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(24deg, rgb(0, 152, 231) 0%, rgb(39, 112, 203) 52%, rgb(136, 82, 184) 100%);
+}
+
+/*
+linear-gradient(180deg,
+  rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 50%,
+  rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 100%
+  )
+ */
+
+.from-currency,
+.to-currency {
+    height: 50%;
+    position: relative;
+}
+
+.to-currency {
+    background: linear-gradient(90deg,
+        rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) calc(50% - 25px),
+        rgba(0, 0, 0, 0) calc(50% - 25px), rgba(0, 0, 0, 0) calc(50% + 25px),
+        rgba(0, 0, 0, 0.2) calc(50% + 25px), rgba(0, 0, 0, 0.2) 100%
+    );
+}
+
+.to-currency::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    left: calc(50% - 25px);
+    top: 0;
+    background: linear-gradient(225deg,
+        rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 15px,
+        rgba(0, 0, 0, 0.2) 15px, rgba(0, 0, 0, 0.2) 100%
+    );
+}
+
+.to-currency::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 100%;
+    left: calc(50%);
+    top: 0;
+    background: linear-gradient(135deg,
+        rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 15px,
+        rgba(0, 0, 0, 0.2) 15px, rgba(0, 0, 0, 0.2) 100%
+    );
+}
+
+.to-currency > * {
+    z-index: 1;
+}

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly PrefixedInput component 1`] = `
+<label
+  className="prefixed-input__label"
+>
+  <input
+    className="prefixed-input__input"
+    onChange={[Function]}
+    type="text"
+    value=""
+  />
+</label>
+`;

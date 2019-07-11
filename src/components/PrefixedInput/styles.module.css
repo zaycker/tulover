@@ -1,0 +1,32 @@
+.prefixed-input__label {
+  position: relative;
+}
+
+.prefixed-input__sign,
+.prefixed-input__input {
+  font-size: 2em;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  background: none;
+  color: #fff;
+  max-width: 200px;
+}
+
+.prefixed-input__sign {
+  position: absolute;
+  right: 0;
+}
+
+.prefixed-input__input {
+  position: relative;
+  z-index: 1;
+  text-align: right;
+}
+
+.prefixed-input__input::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: 300;
+}

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly Dots component 1`] = `
+<div
+  className="dots example"
+>
+  <span
+    className="dots__dot"
+  />
+  <span
+    className="dots__dot dots__dot_active"
+  />
+  <span
+    className="dots__dot"
+  />
+</div>
+`;
